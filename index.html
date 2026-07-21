@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altus Transfers &amp; Tours | Elite Private Travel in Georgia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js" defer></script>
+<style>
+
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+
+  </style>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  
+</head>
+<body class="bg-[#0B0D10] text-[#F2F1EC] antialiased">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-[#0B0D10]/70 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2 group">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+        <path d="M15 2L27 26H3L15 2Z" stroke="#C9A961" stroke-width="1.2"/>
+        <path d="M15 10L21 22H9L15 10Z" fill="#C9A961" fill-opacity="0.15" stroke="#C9A961" stroke-width="1"/>
+      </svg>
+      <span class="font-display text-2xl tracking-[0.15em] text-[#F2F1EC]">ALTUS</span>
+    </a>
+
+    <!-- Desktop links -->
+    <nav class="hidden md:flex items-center gap-10 text-sm tracking-wide uppercase">
+      <a href="#home" class="text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out">Home</a>
+      <a href="#fleet" class="text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out">Our Fleet</a>
+      <a href="#services" class="text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out">Curated Tours</a>
+      <a href="#bookings" class="text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out">Bookings</a>
+    </nav>
+
+    <a href="#bookings" class="hidden md:inline-block bg-[#C9A961] hover:bg-[#DDC17F] text-[#0B0D10] text-sm font-semibold tracking-wide uppercase px-6 py-2.5 rounded-sm transition duration-300 ease-in-out">
+      Book Now
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="menuBtn" class="md:hidden text-[#F2F1EC]" aria-label="Toggle menu">
+      <svg id="menuIconOpen" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="menuIconClose" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile nav -->
+  <div id="mobileMenu" class="md:hidden hidden flex-col gap-1 px-6 pb-6 bg-[#0B0D10]/95 border-t border-white/5">
+    <a href="#home" class="py-3 text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out uppercase text-sm tracking-wide">Home</a>
+    <a href="#fleet" class="py-3 text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out uppercase text-sm tracking-wide">Our Fleet</a>
+    <a href="#services" class="py-3 text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out uppercase text-sm tracking-wide">Curated Tours</a>
+    <a href="#bookings" class="py-3 text-[#D8D6CC] hover:text-[#C9A961] transition duration-300 ease-in-out uppercase text-sm tracking-wide">Bookings</a>
+    <a href="#bookings" class="mt-3 text-center bg-[#C9A961] text-[#0B0D10] font-semibold uppercase text-sm tracking-wide px-6 py-3 rounded-sm">Book Now</a>
+  </div>
+</header>
+
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-[#0B0D10] via-[#12151A] to-[#0B0D10]">
+
+  <!-- Layered Caucasus ridgeline motif -->
+  <svg class="absolute inset-x-0 bottom-0 w-full h-[65%] opacity-[0.55]" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 420 L120 320 L220 400 L340 240 L430 340 L560 180 L680 360 L790 260 L900 400 L1020 220 L1140 380 L1260 300 L1380 400 L1440 340 L1440 500 L0 500 Z" fill="#1C2027"/>
+  </svg>
+  <svg class="absolute inset-x-0 bottom-0 w-full h-[50%] opacity-70" viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 360 L150 220 L260 300 L400 120 L520 260 L650 90 L760 240 L880 150 L1000 300 L1150 160 L1300 320 L1440 220 L1440 400 L0 400 Z" fill="#161A20"/>
+  </svg>
+  <!-- Gold contour ridge line, signature accent -->
+  <svg class="absolute inset-x-0 bottom-[18%] w-full h-40 opacity-90" viewBox="0 0 1440 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 140 L150 60 L260 110 L400 20 L520 100 L650 10 L760 90 L880 40 L1000 110 L1150 30 L1300 120 L1440 60" fill="none" stroke="#C9A961" stroke-width="1" stroke-opacity="0.5"/>
+  </svg>
+
+  <!-- radial glow -->
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[#C9A961]/10 blur-[140px] pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-10 pt-32 pb-24 text-center">
+    <p class="text-[#C9A961] text-xs md:text-sm tracking-[0.35em] uppercase mb-6">Georgia · Private Travel</p>
+    <h1 class="font-display text-5xl sm:text-6xl md:text-8xl leading-[1.05] text-[#F5F4EF] mb-6">
+      Sovereign <span class="italic text-[#C9A961]">Caucasus</span>
+    </h1>
+    <p class="text-base sm:text-lg md:text-xl text-[#B9B7AC] max-w-2xl mx-auto mb-12 tracking-wide">
+      Elite Private Tours &amp; Bespoke Transfers in Georgia
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#fleet" class="w-full sm:w-auto border border-[#C9A961]/60 text-[#F2F1EC] hover:bg-[#C9A961]/10 hover:border-[#C9A961] px-8 py-3.5 text-sm uppercase tracking-widest transition duration-300 ease-in-out rounded-sm">
+        Explore Fleet
+      </a>
+      <a href="#bookings" class="w-full sm:w-auto bg-[#C9A961] hover:bg-[#DDC17F] text-[#0B0D10] font-semibold px-8 py-3.5 text-sm uppercase tracking-widest transition duration-300 ease-in-out rounded-sm shadow-lg shadow-[#C9A961]/10">
+        Request Custom Tour
+      </a>
+    </div>
+  </div>
+
+  <!-- scroll cue -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#8B8F98]">
+    <span class="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+    <div class="w-px h-10 bg-gradient-to-b from-[#C9A961] to-transparent"></div>
+  </div>
+</section>
+
+<!-- ============ FLEET ============ -->
+<section id="fleet" class="relative bg-[#0B0D10] py-28 px-6 lg:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-[#C9A961] text-xs tracking-[0.35em] uppercase mb-4">Curated Vehicles</p>
+      <h2 class="font-display text-4xl md:text-5xl text-[#F5F4EF] mb-4">The Fleet</h2>
+      <p class="text-[#9C9A90] text-sm md:text-base">Four hand-selected vehicles, each matched to a different way of experiencing Georgia — from mirrored city boulevards to unpaved mountain passes.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1: V-Class -->
+      <article class="group bg-[#12151A] border border-white/5 rounded-lg overflow-hidden hover:border-[#C9A961]/40 hover:-translate-y-1 transition duration-300 ease-in-out">
+        <div class="relative h-52 overflow-hidden bg-[#1C2027]">
+          <img src="images/vclass.png" alt="Mercedes-Benz V-Class V250d 2019" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B0D10] via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 bg-[#0B0D10]/80 border border-[#C9A961]/30 text-[#C9A961] text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-sm">Luxury Van</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl text-[#F5F4EF] mb-1">Mercedes-Benz V-Class V250d</h3>
+          <p class="text-[#7D7B72] text-xs uppercase tracking-wider mb-4">2019</p>
+          <div class="flex items-center gap-4 text-[#B9B7AC] text-xs mb-4">
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Up to 7
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><rect x="7" y="7" width="10" height="14" rx="1"/><path d="M10 7V5a2 2 0 0 1 4 0v2"/></svg>
+              Full Luggage
+            </span>
+          </div>
+          <div class="h-px w-full bg-gradient-to-r from-[#C9A961]/40 to-transparent mb-4"></div>
+          <p class="text-sm text-[#9C9A90]">VIP Group &amp; Business Transfers</p>
+        </div>
+      </article>
+
+      <!-- Card 2: C-Class -->
+      <article class="group bg-[#12151A] border border-white/5 rounded-lg overflow-hidden hover:border-[#C9A961]/40 hover:-translate-y-1 transition duration-300 ease-in-out">
+        <div class="relative h-52 overflow-hidden bg-[#1C2027]">
+          <img src="images/cclass.jpg" alt="Mercedes-Benz C-Class Executive Sedan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B0D10] via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 bg-[#0B0D10]/80 border border-[#C9A961]/30 text-[#C9A961] text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-sm">Premium Sedan</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl text-[#F5F4EF] mb-1">Mercedes-Benz C43 AMG</h3>
+          <p class="text-[#7D7B72] text-xs uppercase tracking-wider mb-4">2016</p>
+          <div class="flex items-center gap-4 text-[#B9B7AC] text-xs mb-4">
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Up to 3
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><rect x="7" y="7" width="10" height="14" rx="1"/><path d="M10 7V5a2 2 0 0 1 4 0v2"/></svg>
+              2 Cases
+            </span>
+          </div>
+          <div class="h-px w-full bg-gradient-to-r from-[#C9A961]/40 to-transparent mb-4"></div>
+          <p class="text-sm text-[#9C9A90]">Executive City Chauffeur</p>
+        </div>
+      </article>
+
+      <!-- Card 3: Jeep Wrangler -->
+      <article class="group bg-[#12151A] border border-white/5 rounded-lg overflow-hidden hover:border-[#C9A961]/40 hover:-translate-y-1 transition duration-300 ease-in-out">
+        <div class="relative h-52 overflow-hidden bg-gradient-to-br from-[#1C2027] to-[#0B0D10] flex items-center justify-center">
+           <img src="images/jeepWrangler.png" alt="Toyota Camry 2025" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out">
+          <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" class="opacity-60 group-hover:scale-105 transition duration-300 ease-in-out">
+            <path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13"/>
+            <path d="M3 13h18v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4z"/>
+            <circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>
+          </svg>
+          <span class="absolute top-3 left-3 bg-[#0B0D10]/80 border border-[#C9A961]/30 text-[#C9A961] text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-sm">Premium 4x4</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl text-[#F5F4EF] mb-1">Jeep Wrangler Rubicon</h3>
+          <p class="text-[#7D7B72] text-xs uppercase tracking-wider mb-4">2017</p>
+          <div class="flex items-center gap-4 text-[#B9B7AC] text-xs mb-4">
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Up to 4
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><rect x="7" y="7" width="10" height="14" rx="1"/><path d="M10 7V5a2 2 0 0 1 4 0v2"/></svg>
+              2 Cases
+            </span>
+          </div>
+          <div class="h-px w-full bg-gradient-to-r from-[#C9A961]/40 to-transparent mb-4"></div>
+          <p class="text-sm text-[#9C9A90]">Rugged Caucasus Mountain Expeditions</p>
+        </div>
+      </article>
+
+      <!-- Card 4: Camry -->
+      <article class="group bg-[#12151A] border border-white/5 rounded-lg overflow-hidden hover:border-[#C9A961]/40 hover:-translate-y-1 transition duration-300 ease-in-out">
+        <div class="relative h-52 overflow-hidden bg-[#1C2027]">
+          <img src="images/camry.jpeg" alt="Toyota Camry 2025" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B0D10] via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 bg-[#0B0D10]/80 border border-[#C9A961]/30 text-[#C9A961] text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-sm">Comfort Sedan</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl text-[#F5F4EF] mb-1">Toyota Camry</h3>
+          <p class="text-[#7D7B72] text-xs uppercase tracking-wider mb-4">2025</p>
+          <div class="flex items-center gap-4 text-[#B9B7AC] text-xs mb-4">
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Up to 3
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.5"><rect x="7" y="7" width="10" height="14" rx="1"/><path d="M10 7V5a2 2 0 0 1 4 0v2"/></svg>
+              2 Cases
+            </span>
+          </div>
+          <div class="h-px w-full bg-gradient-to-r from-[#C9A961]/40 to-transparent mb-4"></div>
+          <p class="text-sm text-[#9C9A90]">Sleek &amp; Comfortable Country Tours</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="relative bg-[#0F1216] py-28 px-6 lg:px-10 border-y border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-[#C9A961] text-xs tracking-[0.35em] uppercase mb-4">Curated Experiences</p>
+      <h2 class="font-display text-4xl md:text-5xl text-[#F5F4EF] mb-4">Services</h2>
+      <p class="text-[#9C9A90] text-sm md:text-base">Three ways we take you through Georgia — met at the gate, poured a glass, or driven to the ridgeline.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+
+      <div class="text-center px-4">
+        <div class="mx-auto mb-6 w-16 h-16 rounded-full border border-[#C9A961]/30 flex items-center justify-center">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.3"><path d="M2 22h20"/><path d="M6.36 17.4L4 17l-.7-2.1L1 12l1.5-1.5L4 8l3.1 1L14 3l5 5-8 6.9 1 3.1L6 22l-2-2 2.4-2.6z"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-[#F5F4EF] mb-3">Airport Concierge &amp; Transfers</h3>
+        <p class="text-sm text-[#9C9A90] leading-relaxed">Private meet-and-greet and door-to-door transfers between Tbilisi, Kutaisi, and Batumi — tracked flights, zero waiting.</p>
+      </div>
+
+      <div class="text-center px-4">
+        <div class="mx-auto mb-6 w-16 h-16 rounded-full border border-[#C9A961]/30 flex items-center justify-center">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.3"><path d="M8 2h8l-1 7a3 3 0 0 1-6 0L8 2z"/><path d="M12 13v9"/><path d="M8 22h8"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-[#F5F4EF] mb-3">Bespoke Wine Tours</h3>
+        <p class="text-sm text-[#9C9A90] leading-relaxed">Private cellar visits and tastings through the Kakheti region, timed to the harvest and shaped around your palate.</p>
+      </div>
+
+      <div class="text-center px-4">
+        <div class="mx-auto mb-6 w-16 h-16 rounded-full border border-[#C9A961]/30 flex items-center justify-center">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.3"><path d="M8 21l4-16 4 16"/><path d="M3 21l6-11 3 5"/><path d="M13 21l4-8 4 8"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-[#F5F4EF] mb-3">High-Altitude Alpine Expeditions</h3>
+        <p class="text-sm text-[#9C9A90] leading-relaxed">4x4-led routes into Kazbegi and Svaneti, reaching villages and passes a standard sedan never could.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ INQUIRY FORM ============ -->
+<section id="bookings" class="relative bg-[#0B0D10] py-28 px-6 lg:px-10">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#C9A961]/5 blur-[160px]"></div>
+  </div>
+
+  <div class="relative max-w-2xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-[#C9A961] text-xs tracking-[0.35em] uppercase mb-4">Reserve Your Journey</p>
+      <h2 class="font-display text-4xl md:text-5xl text-[#F5F4EF] mb-4">Quick Inquiry</h2>
+      <p class="text-[#9C9A90] text-sm md:text-base">Tell us the shape of your trip. A member of our team will confirm availability within hours.</p>
+    </div>
+
+  
+<form id="bookingForm" class="bg-[#12151A] border border-[#C9A961]/15 rounded-xl p-8 sm:p-10 shadow-2xl shadow-black/40">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="fullName" class="block text-xs uppercase tracking-wider text-[#B9B7AC] mb-2">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="John Smith"
+            class="w-full bg-[#0B0D10] border border-white/10 focus:border-[#C9A961] rounded-sm px-4 py-3 text-sm text-[#F2F1EC] placeholder-[#5F5D55] outline-none transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <label for="email" class="block text-xs uppercase tracking-wider text-[#B9B7AC] mb-2">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com"
+            class="w-full bg-[#0B0D10] border border-white/10 focus:border-[#C9A961] rounded-sm px-4 py-3 text-sm text-[#F2F1EC] placeholder-[#5F5D55] outline-none transition duration-300 ease-in-out">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="serviceType" class="block text-xs uppercase tracking-wider text-[#B9B7AC] mb-2">Service Type</label>
+          <select id="serviceType" name="serviceType" required
+            class="w-full bg-[#0B0D10] border border-white/10 focus:border-[#C9A961] rounded-sm px-4 py-3 text-sm text-[#F2F1EC] outline-none transition duration-300 ease-in-out appearance-none">
+            <option value="">Select service</option>
+            <option value="private-tour">Private Tour</option>
+            <option value="airport-transfer">Airport Transfer</option>
+          </select>
+        </div>
+        <div>
+          <label for="fleetSelect" class="block text-xs uppercase tracking-wider text-[#B9B7AC] mb-2">Select Fleet</label>
+          <select id="fleetSelect" name="fleetSelect" required
+            class="w-full bg-[#0B0D10] border border-white/10 focus:border-[#C9A961] rounded-sm px-4 py-3 text-sm text-[#F2F1EC] outline-none transition duration-300 ease-in-out appearance-none">
+            <option value="">Select vehicle</option>
+            <option value="v-class">Mercedes-Benz V-Class V250d (2019)</option>
+            <option value="c-class">Mercedes-Benz C43 AMG</option>
+            <option value="wrangler">Jeep Wrangler Rubicon (2017)</option>
+            <option value="camry">Toyota Camry (2025)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <label for="date" class="block text-xs uppercase tracking-wider text-[#B9B7AC] mb-2">Date</label>
+        <input type="date" id="date" name="date" required
+          class="w-full bg-[#0B0D10] border border-white/10 focus:border-[#C9A961] rounded-sm px-4 py-3 text-sm text-[#F2F1EC] outline-none transition duration-300 ease-in-out">
+      </div>
+
+      <button type="submit"
+        class="w-full bg-[#C9A961] hover:bg-[#DDC17F] text-[#0B0D10] font-semibold uppercase text-sm tracking-widest py-4 rounded-sm transition duration-300 ease-in-out">
+        Request Reservation
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[#08090B] border-t border-white/5 px-6 lg:px-10 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 2L27 26H3L15 2Z" stroke="#C9A961" stroke-width="1.2"/>
+        </svg>
+        <span class="font-display text-xl tracking-[0.15em] text-[#F2F1EC]">ALTUS</span>
+      </div>
+      <p class="text-sm text-[#75736A] leading-relaxed">Elite private tours and bespoke transfers across Georgia — Tbilisi to the Caucasus ridgeline.</p>
+    </div>
+
+    <div>
+      <h4 class="text-xs uppercase tracking-wider text-[#C9A961] mb-4">Navigate</h4>
+      <ul class="space-y-3 text-sm text-[#9C9A90]">
+        <li><a href="#home" class="hover:text-[#C9A961] transition duration-300 ease-in-out">Home</a></li>
+        <li><a href="#fleet" class="hover:text-[#C9A961] transition duration-300 ease-in-out">Our Fleet</a></li>
+        <li><a href="#services" class="hover:text-[#C9A961] transition duration-300 ease-in-out">Curated Tours</a></li>
+        <li><a href="#bookings" class="hover:text-[#C9A961] transition duration-300 ease-in-out">Bookings</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-xs uppercase tracking-wider text-[#C9A961] mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm text-[#9C9A90]">
+        <li>Batumi, Georgia</li>
+        <li><a href="tel:+995000000000" class="hover:text-[#C9A961] transition duration-300 ease-in-out">+995 592 804 401</a></li>
+        <li><a href="mailto:reservations@altustours.ge" class="hover:text-[#C9A961] transition duration-300 ease-in-out"></a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-xs uppercase tracking-wider text-[#C9A961] mb-4">Follow</h4>
+      <div class="flex items-center gap-4">
+        <a href="#" aria-label="Instagram" class="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 hover:border-[#C9A961] text-[#9C9A90] hover:text-[#C9A961] transition duration-300 ease-in-out">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 hover:border-[#C9A961] text-[#9C9A90] hover:text-[#C9A961] transition duration-300 ease-in-out">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v8h4v-8h2.5l.5-4H15V8z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 hover:border-[#C9A961] text-[#9C9A90] hover:text-[#C9A961] transition duration-300 ease-in-out">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-xs text-[#5F5D55]">&copy; 2026 Altus Transfers &amp; Tours. All rights reserved.</p>
+    <p class="text-xs text-[#5F5D55] tracking-wide uppercase">Tbilisi · Kutaisi · Batumi</p>
+  </div>
+</footer>
+
+</body>
+</html>
