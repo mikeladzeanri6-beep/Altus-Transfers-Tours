@@ -37,16 +37,23 @@ if (menuBtn && mobileMenu) {
 // ==========================================
 // 2. EmailJS Booking Form Handler
 // ==========================================
-(function() {
-  // Replace with your EmailJS Public Key
+// Safely initialize EmailJS once loaded
+if (typeof emailjs !== 'undefined') {
   emailjs.init("O6y2mykP0LcqoP5Pa");
-})();
+} else {
+  console.error("EmailJS SDK failed to load. Check script inclusion.");
+}
 
 const bookingForm = document.getElementById('bookingForm');
 
 if (bookingForm) {
   bookingForm.addEventListener('submit', function(event) {
     event.preventDefault();
+
+    if (typeof emailjs === 'undefined') {
+      alert('Email service is currently unavailable. Please contact us directly.');
+      return;
+    }
 
     const form = this;
     const submitButton = form.querySelector('button[type="submit"]');
@@ -65,14 +72,14 @@ if (bookingForm) {
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Thank you! Your booking request has been sent successfully.');
-        form.reset(); // Clear the form fields after successful submission
+        form.reset(); // Clear form fields
       })
       .catch((error) => {
         console.error('FAILED...', error);
         alert('Failed to send booking request. Please try again or contact us directly.');
       })
       .finally(() => {
-        // Reset button state regardless of success or failure
+        // Reset button state regardless of outcome
         if (submitButton) {
           submitButton.textContent = originalButtonText;
           submitButton.disabled = false;
